@@ -1,0 +1,128 @@
+header#encabezado{
+    grid-area: encabezado;
+}
+main section#productos{
+    grid-area: productos;
+}
+main section#carrusel{
+    grid-area: carrusel;
+}
+main section#contenido{
+    grid-area: contenido;
+    align-content: center;
+}
+main section#form{
+    grid-area: form;
+}
+main section#texto{
+    grid-area: texto;
+}
+footer{
+    grid-area: footer;
+}
+
+
+@media only screen and (min-width: 1024px){
+    #carouselExampleIndicators{
+        height: 480px;
+        width: 350px;
+    }
+    .gridPrueba{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "contenido"
+            "form"
+            "footer"
+        ;
+    }
+    .gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "productos"
+            "form"
+            "footer"  
+        ;
+    }
+    .gridTexto{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+            "encabezado"
+            "texto"
+            "footer"
+        ;
+    }
+}
+@media only screen and (max-width: 768px){
+   
+    #carouselExampleIndicators{
+        height: 480px;
+        width: 350px;
+    }
+    .gridPrueba{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "contenido"
+            "form"
+            "footer"
+        ;
+    }
+    .gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "productos"
+            "form"
+            "footer"  
+        ;
+    }
+}
+@media only screen and (max-width: 320px){
+    #carouselExampleIndicators{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+        width: 250px;
+        height: 380px;
+    }
+    .gridPrueba{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "contenido"
+            "form"
+            "footer"
+        ;
+    }
+    .gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "productos"
+            "form"
+            "footer"  
+        ;
+    }
+}

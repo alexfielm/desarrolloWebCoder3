@@ -1,0 +1,32 @@
+@import "./parciales/header";
+@import "./parciales/section";
+@import "./parciales/media";
+@import "./parciales/sobreNosotros";
+@import "./parciales/tablas";
+@import "./parciales/footer";
+@import "./parciales/boton";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+.contentFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.pedidos{
+    background-color: white;
+    .pedidos__h2{
+        color: black;
+        font-family: sans-serif;
+    }
+}
+.form{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,59,22,1) 50%, rgba(121,114,9,1) 96%);
+    .form__h2{
+        color: white;
+    }
+}
+
+
+

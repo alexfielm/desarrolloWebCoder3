@@ -1,0 +1,9 @@
+.boton{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,59,22,1) 50%, rgba(121,114,9,1) 96%);
+    border-color: white;
+    :hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,  rgba(121,114,9,1) 0%,  rgba(64,59,22,1) 50%, rgba(2,0,36,1) 96%);
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remera The Wolf</title>
+    <link rel="stylesheet" href="../estilos/main.css">
+</head>
+<body>
+    <div class="gridPrueba">
+        <header id="encabezado">
+            <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgba(121,114,9,1)">
+                <div class="container"> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a href="../index.html" class="navbar-brand">The Wolf</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item headerLi">
+                        <a class="nav-link active" aria-current="page" href="./coleccionVerano.html">Colección verano</a>
+                    </li>
+                    <li class="nav-item headerLi">
+                        <a class="nav-link active" aria-current="page" href="./coleccionInvierno.html">Colección invierno</a>
+                    </li>
+                    <li class="nav-item headerLi">
+                        <a class="nav-link active" aria-current="page" href="./faq.html">FaQ</a>
+                    </li>
+                    <li class="nav-item headerLi">
+                        <a class="nav-link active" aria-current="page" href="./sobreNosotros.html">Sobre nosotros</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <main class="contentFlex" style="justify-content: flex-start;" >
+            <section id="carrusel" class="contentFlex container" style="justify-content: center; margin-bottom: 4rem;">
+                <h1 class="container" style="margin-bottom: 2rem; margin-top: 1rem;">Remera The Wolf</h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/remeraThewolf/remeraThewolf1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/remeraThewolf/remeraThewolfnegro.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/remeraThewolf/remeraThewolf3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section id="contenido" class="contentFlex container" style>
+                <div class="card card-body" style="width: 18rem;">
+                    <form action="" method="get" enctype="text/plain" >
+                        <fieldset>
+                            <h2 class="card-title">Crée su pedido</h2>
+                            <strong><p>Seleccione el talle</p></strong>
+                            <select name="Talle" placeholder="Talle">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                            <strong><p>Seleccione el color</p></strong>
+                            <label for="gris">Gris</label>
+                            <input type="radio" name="color" value="gris" id="gris">
+                            <label for="negro">Negro</label>
+                            <input type="radio" name="color" value="negro" id="negro">
+                            <label for="verde">Verde</label>
+                            <input type="radio" name="color" value="verde" id="verde">
+                            <div style="padding-top: 1rem;"></div>
+                            <input type="submit" value="Realizar pedido">
+                        </fieldset>
+                    </form>
+                    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top:1rem;">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Tabla de tallas
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Para encontrar tu talle ideal rodea con una cinta metrica tu pecho y cintura, a continuacion tienes una tabla que te ayudará a elegir el talle que mejor se adapte a vos.</p>
+                            <table border="1px" cellspacing="5px" class="container-fluid">
+                                <tr>
+                                    <th>Talle</th>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>L</th>
+                                    <th>XL</th>
+                                    <th>XXL</th>
+                                </tr>
+                                <tr>
+                                    <td class="tableTd">Medida pecho</td>
+                                    <td>88-94 cm</td>
+                                    <td>95-102 cm</td>
+                                    <td>103-111 cm</td>
+                                    <td>112-121 cm</td>
+                                    <td>122-132 cm</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableTd">Medida cintura</td>
+                                    <td>76-82 cm</td>
+                                    <td>83-90 cm</td>
+                                    <td>91-99 cm</td>
+                                    <td>100-109 cm</td>
+                                    <td>110-121 cm</td>
+                                </tr>
+                            </table></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                             Acerca del producto
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><p>Remera estampada "The Wolf" confeccionada con modal ofreciendote así un producto relación calidad/precio</p></div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+            <section class="section form container" id="form">
+                <form action="" method="get" enctype="text/plain" class="degradado" style="padding: 2rem;">
+                    <fieldset style="width: auto; height: auto; border-color: transparent;">
+                        <h2 class="form__h2">¿No hay stock del producto que deseas?</h2>
+                        <h4 style="color: white;">Suscríbete para enterarte de cuando vuelva a haber stock, además podrás obtener promociones exclusivas y enterarte de las novedades antes que nadie.</h4>
+                        <div>
+                            <p class="form__h2">Nombre</p>
+                            <input type="text" name="" id="" placeholder="Nombre">
+                        </div>
+                        <div>
+                            <p class="form__h2">Correo electrónico</p>
+                            <input type="email" name="" id="" placeholder="Correo electrónico">
+                        </div>
+                        <div>
+                            <p class="form__h2">Fecha de nacimiento</p>
+                            <input type="date" name="fecha">
+                        </div>
+                        <div style="padding-top: 1rem;">
+                          <input type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer class="footer contentFlex container-fluid">
+            <ul>
+                <h3 class="footer__h2" style="padding-top: 1rem;">Contáctanos</h3>
+                <li style="padding-top: 1rem;"><a href="https://wa.me/message/YZE65S7QM4DNH1"><img src="../assets/logoWhatsApp.png" alt="Imgane de WhatsApp" class="footer__img"></a>  WhatsApp</li>
+            </ul>
+            <ul>
+                <h3 class="footer__h2" style="padding-top: 1rem;">Redes sociales</h3>
+                <li style="padding-top: 1rem;"><a href="https://www.instagram.com/thewolfurban/"><img src="../assets/logoInstagram.png" alt="Imagen de Instagram" class="footer__img"></a>  Instagram</li>
+                <li style="padding-top: 1rem;"><a href="https://www.facebook.com/The-Wolf-Urban-113504000830537"><img src="../assets/logoFace.png" alt="Imgane de Facebook" class="footer__img"></a>  Facebook</li>
+            </ul>
+            <ul>
+                <h3 class="footer__h2" style="padding-top: 1rem;">Encuentranos</h3>
+                <p>Bogotá 3258</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13132.100891709417!2d-58.47562286642196!3d-34.62880288360946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95ca5d5d43b%3A0xafda3ac244418640!2sGaleria%20La%20Alegria!5e0!3m2!1ses-419!2sar!4v1640643406523!5m2!1ses-419!2sar" width="250" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
